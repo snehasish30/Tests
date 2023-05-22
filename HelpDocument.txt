@@ -1,0 +1,25 @@
+Steps to  run the application : 
+
+1. Extract the repos folder into your local system 
+2. Navigate to the local folder \CodeBase\repos.zip\repos\HotelBooking and build the sln file (It is with the name HotelBooking.sln)
+3. Build the Solution
+4. Check whether there are two projects in the solution 
+		1. HotelBooking - Code Base 
+		2. HotelBooking.Tests - Test Base
+5. Navigate to the file appsettings.json in the Solution Explorer and check whether the value for the key Filepath is not null 
+6. Go to the Project HotelBooking.Tests and run the tests in the Test Explorer
+7. To run the application in the local mode, 
+		1. Click on the project HotelBooking and set it as the Startup project
+		2. Build the project and check whether the solution is building 
+		3. Host the application in the Kestrel Web server and host it on the swagger endpoint 
+		
+
+Features : 
+
+1. Incorporated tests using the xunit framework leveraging Moq 
+2. Noted 4 test cases 2 positive & 2 negative test cases 
+3. Followed the clean architecture guidelines to segregate the code into various modules 
+	1. Configurations - To read the configurations file 
+	2. Created Custom handler classes to customise the API Code response 
+	3. Created spearate static integrations file to decouple the code 
+4. Integrated the code with swagger for API documentation 
